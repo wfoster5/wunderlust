@@ -21,15 +21,15 @@
             </nav>
         </header>
 
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ 
 <main>
-  <section>
-    <h2>Majorca</h2>
-    <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
-    <img src="majorca-waves.png" alt="ocean waves on cliffside">
-    <img src="majorca-beach.png" alt="private beach with blue water">
-    <img src="majorca-cove.png" alt="cove surrounded by cliffs and a house">
-  </section>
+      <section>
+        <h2>Majorca</h2>
+          <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
+          <img src="majorca-waves.png" alt="ocean waves on cliffside">
+          <img src="majorca-beach.png" alt="private beach with blue water">
+          <img src="majorca-cove.png" alt="cove surrounded by cliffs and a house">
+      </section>
   <section>
 
   <h2>Plan Your Trip</h2>
@@ -40,7 +40,7 @@
         <path d="M16 10h4a2 2 0 0 1 0 4h-4l-4 7h-3l2 -7h-4l-2 2h-3l2 -4l-2 -4h3l2 2h4l-2 -7h3z" />
       </svg>
 
-<a href="#" (title="Search for flights">
+<a href="#" title="Search for flights">
 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="40" height="40" viewBox="0 0 24 24" stroke-width="3" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <polyline points="9 6 15 12 9 18" />
@@ -200,12 +200,34 @@
       <label for="phone">Phone<span>*</span></label>
       <input id="phone" placeholder="Enter telephone number" name="phone" type="text" required>
 
+      <label for="destinations">Destination<span>*</span></label>
+            <select id="destinations" name="destinations">
+              <option value="barcelona">Barcelona</option>
+              <option value="granada">Granada</option>
+              <option value="ibiza">Ibiza</option>
+              <option value="madrid">Madrid</option>
+              <option value="majorca">Majorca</option>
+              <option value="seville">Seville</option>
+              <option value="tenerife">Tenerife</option>
+              <option value="valencia">Valencia</option>
+            </select>
+            
+            <label for="travel-time">Travel Time<span>*</span></label>
+            <select id="travel-time" name="travel-time">
+              <option value="spring">Spring</option>
+              <option value="summer">Summer</option>
+              <option value="fall">Fall</option>
+              <option value="winter">Winter</option>
+              <option value="flexible">Flexible</option>
+            </select>
 
-Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
-Travel Time (Fall, Winter, Spring, Summer, Flexible)
-
-
-
-Copyright 2021 Wunderlust
-Privacy Statement
-Terms of Service
+            <input type="submit">
+        </form>
+    </aside>
+<footer>
+  <p>Copyright &copy; 2021 Wunderlust</p>
+  <a href="#">Privacy Statement</a>
+  <a href="#">Terms of Service</a>
+</footer>
+</body>
+</html>
