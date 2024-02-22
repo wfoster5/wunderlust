@@ -389,5 +389,27 @@ footer p{
 footer a{
     cursor: pointer;
 }
+@media (hover:hover){
+    #menu-toggle label:hover{
+        background-color: var(--dark-grey);
+        color: var(--white);
+    }
+    nav a:hover{
+        background-color: var(--yellow);
+
+    }
+    #mySubmit:hover{
+        background-color: var(--teal);
+        color: var(--dark-grey);
+    }
+    footer a:hover{
+        color: var(--blue);
+    }
+}
+@media screen and (min-width:600px){
+    header{
+        
+    }
+}
 
 }
