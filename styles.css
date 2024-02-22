@@ -147,7 +147,7 @@ header p {
 
 nav {
     order: 2;
-    background-color: var(--teal);
+    color: var(--teal);
 }
 
 /* hamburger menu styles */
