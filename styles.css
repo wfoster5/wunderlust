@@ -75,5 +75,18 @@ table {
 }
 body{
     box-sizing: content-box;
+    line-height: 1.35;
+    font-family: var(--fonts);
+    font-weight: bold;
+    color: var(--dark-grey);
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    
 }
 }
