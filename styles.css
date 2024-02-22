@@ -182,7 +182,54 @@ h2, h3{
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
 }
-
+article > section, footer{
+    margin-top: 1.5rem;
+    padding:  5% 10%;
+}
+h4{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-decoration: uppercase;
+}
+q{
+    text-align: center;
+    font-style: italic;
+}
+#intro p{
+    margin: 0 1rem 1rem;
+}
+#img-grid{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0;
+    padding: 0;
+}
+#img-grid img{
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+#plan{
+    background-color: var(--yellow);
+}
+#plan div{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem
+}
+#plan section{
+    border: 3px solid var(--white);
+    border-radius: 8px;
+    background-color: var(--teal);
+    max-width: 350px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
 
 
 }
