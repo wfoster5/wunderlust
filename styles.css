@@ -58,39 +58,31 @@ table {
     --h4-body-font: "Montserrat", sans-serif; 
     font-size: 16px;
 }
-
 * {
     box-sizing: border-box;
 }
-
 h1, h2, h3 {
     font-family: var(--h1-h2-h3-font);
 }
-
 h4, p, q, small, nav, button, form {
     font-family: var(--h4-body-font);
 }
-
 h1 {
     font-size: 40px;
     padding: 0.5em 0.75em 0;
 }
-
 h2 {
     font-size: 32px;
     padding: .5em .75em 0;
 }
-
 h3 {
     font-size: 24px;
 }
-
 h4 {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bolder;
 }
-
 #skip {
     position: absolute;
     left: -10000px;
@@ -99,23 +91,18 @@ h4 {
     width: 1px;
     overflow: hidden;
 }
-
 #skip:focus {
     position: static;
     height: auto;
     width: auto;
     left: 0;
 }
-
 body {
     line-height: 1.5;
 }
-
 main p:not(#about p) {
     padding: 0.25em 1.5em;
 }
-
-/* header styles */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -123,34 +110,27 @@ header {
     align-items: center;
     background-image: linear-gradient(180deg, var(--teal), transparent);
 }
-
 #logo {
     order: 1;
     justify-self: center;
 }
-
 #logo img {
     max-width: 130px;
     width: 100%;
 }
-
 h1 {
     order: 3;
     width: 100%;
 }
-
 header p {
     order: 4;
     font-size: 18px;
     padding: 0.25em 1.5em;
 }
-
 nav {
     order: 2;
-    color: var(--teal);
+    
 }
-
-/* hamburger menu styles */
 #menu-toggle {
     display: flex;
     flex-direction: column;
@@ -158,7 +138,6 @@ nav {
     text-transform: uppercase;
     font-weight: bolder;
 }
-
 #menu-toggle input:checked ~ label {
     position: absolute;
     right: 0;
@@ -167,13 +146,11 @@ nav {
     background-color: var(--black);
     color: var(--white);
 }
-
 #menu-toggle input:checked ~ label:hover {
     background-color: var(--yellow);
     color: var(--black);
     filter: saturate(2);
 }
-
 #menu-toggle input:checked ~ ul {
     position: absolute;
     left: 0;
@@ -182,11 +159,9 @@ nav {
     width: 100%;
     transition: 400ms;
 }
-
 #menu-toggle input:not(:checked) ~ ul {
     transition: 400ms;
 }
-
 #menu-toggle h2 {
     position: absolute;
     left: -10000px;
@@ -196,7 +171,6 @@ nav {
     overflow: hidden;
     padding: 0;
 }
-
 #menu-toggle input {
     position: absolute;
     left: -1px;
@@ -206,24 +180,20 @@ nav {
     display: block;
     cursor: pointer;
 }
-
 #menu-toggle label {
     padding: 15px 60px;
     background-color: var(--yellow);
     text-align: center;
 }
-
 #menu-toggle label:hover {
     cursor: pointer;
     filter: saturate(2);
 }
-
 #menu-toggle ul {
     position: absolute;
     top: 46px;
     left: -100%;
 }
-
 #menu-toggle a {
     display: block;
     background-color: var(--teal);
@@ -232,49 +202,38 @@ nav {
     padding: 1em 0;
     transition: 400ms;
 }
-
 #menu-toggle a:hover {
     background-color: var(--yellow);
     color: var(--black);
     filter: saturate(2);
 }
-
 #menu-toggle li:not(:last-child) a {
     border-bottom: 1px solid var(--black);
 }
-
-/* intro section */
 #intro {
     padding: 0.5em 0;
 }
-
 #img-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
 }
-
 #img-grid img {
     max-width: 100%;
     width: 100%;
 }
-
 #img-grid img:nth-child(2) {
     grid-column: 1/2;
     grid-row: 1/2;
 }
-
-/* plan section */
 #plan {
     background-color: var(--yellow);
 }
-
 #plan h3 {
     text-align: center;
     padding: 1em 0 0;
     font-size: 2em;
 }
-
 #plan div {
     display: grid;
     grid-template-columns: minmax(250px, 300px);
@@ -285,30 +244,24 @@ nav {
     font-weight: bolder;
     text-align: center;
 }
-
 #plan section {
     background-color: var(--teal);
     padding: 1em;
     border-radius: 8px;
     border: 2px solid var(--white);
 }
-
 #plan img {
     display: block;
     max-width: 100%;
     padding: 1em;
     margin: 0 auto;
 }
-
-/* testimonials section */
 #testimonials {
     padding: 2em;
 }
-
 #testimonials h3 {
     font-size: 2em;
 }
-
 #testimonials div {
     display: grid;
     grid-template-columns: 1fr;
@@ -316,128 +269,101 @@ nav {
     grid-gap: 1em;
     text-align: center;
 }
-
 #testimonials h4 {
     font-size: 1.5em;
 }
-
 #testimonials q {
     font-style: italic;
 }
-
 #testimonials q::before {
     content: '"';
 }
-
 #testimonials q::after {
     content: '"';
 }
-
-/* about section */
 #about {
     background-color: var(--blue);
 }
-
 #about h3 {
     padding: 1em 1em 0.5em;
 }
-
 #about div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
     padding: 0 1em 1em 1em;
 }
-
 #about section {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
 #about img {
     max-width: 100%;
     max-height: 80px;
 }
-
-/* contact section */
 #contact {
     padding: 1em 0.5em 0;
 }
-
 #contact h3 {
     padding: 0 0 0 0.75em;
 }
-
 #contact h3 span {
     font-family: var(--h4-body-font);
     font-size: .5em;
     font-style: italic;
 }
-
 form {
     padding: 0 1em;
 }
-
 legend, form label:not(fieldset label) {
     text-transform: uppercase;
     font-weight: bolder;
 }
-
 form label:not(fieldset label, :first-of-type) {
     padding-top: 1em;
 }
-
 .required {
     color: var(--purple);
     font-weight: bolder;
 }
-
 form div {
     display: flex;
     flex-direction: column;
 }
-
 form input {
     padding: 1em;
     border: 3px solid var(--purple);
     font-family: var(--h4-body-font);
 }
-
 #nums {
     padding: 1em 0;
 }
-
 fieldset {
     display: flex;
     flex-direction: column;
 }
-
 fieldset label {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-
 .radio-input {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-
 [type="radio"] {
     width: 50px;
     height: 50px;
 }
-
 [type="radio"]:checked {
     background-color: var(--purple);
     border-radius: 50%;
     transform: scale(.5);
     appearance: none;
 }
-
 .radio-control {
     position: absolute;
     display: block;
@@ -448,24 +374,20 @@ fieldset label {
     border-radius: 50%;
     transform: translate(10%, 3%);
 }
-
 .radio-label {
     padding: 0 1em;
 }
-
 select {
     padding: 1em;
     border: 3px solid var(--purple);
     font-family: var(--h4-body-font);
 }
-
 select::before {
     display: block;
     content: "";
     width: 50px;
     height: 50px;
 }
-
 #mySubmit {
     margin-top: 1em;
     background-color: var(--purple);
@@ -473,8 +395,6 @@ select::before {
     text-transform: uppercase;
     font-weight: bolder;
 }
-
-/* footer section */
 footer {
     display: flex;
     flex-direction: column;
@@ -483,12 +403,10 @@ footer {
     margin: 1em 0 0;
     background-color: var(--light-gray);
 }
-
 footer p {
     font-size: .9em;
     padding: 0.5em;
 }
-
 footer a {
     text-decoration: none;
     color: var(--black);
@@ -496,8 +414,6 @@ footer a {
     font-size: .8em;
     padding: 1em 0 0;
 }
-
-/* media queries */
 @media (min-width: 650px) {
     header {
         display: grid;
@@ -505,42 +421,34 @@ footer a {
         grid-template-rows: repeat(3, .5fr);
         padding-bottom: 2em;
     }
-
     main p:not(#about p) {
         padding: 0.25em 0.5em;
     }
-
     #logo {
         grid-row: 1/3;
         order: unset;
     }
-
     #logo img {
         max-width: 180px;
         width: fit-content;
     }
-
     h1 {
         order: unset;
     }
-
     header p {
         grid-row: 2/3;
         grid-column: 2/-1;
         order: unset;
     }
-
     nav {
         grid-row: 3/4;
         grid-column: 1/-1;
         padding: 1em;
         order: unset;
     }
-
     #menu-toggle label {
         display: none;
     }
-
     #menu-toggle ul {
         display: flex;
         justify-content: space-evenly;
@@ -549,84 +457,66 @@ footer a {
         top: auto;
         left: auto;
     }
-
     #menu-toggle li {
         max-width: 25%;
         width: 100%;
         text-align: center;
         margin: 0.5em;
     }
-
     #menu-toggle li:not(:last-child) a {
         border-bottom: unset;
     }
-
     #menu-toggle a {
         background-color: var(--white);
     }
-
     #menu-toggle a:hover {
         background-color: var(--yellow);
     }
-
     #intro {
         padding: 2em;
     }
-
     h2 {
         padding: 0.5em 0.25em 0;
     }
-
     main p {
         padding: 0.25em 0.25em;
     }
-
     #img-grid {
         grid-template-columns: 1fr 1fr;
     }
-
     #img-grid picture {
         grid-column: 1/-1;
     }
-
     #plan h3 {
         text-align: left;
         padding: 1em 0 0 1em;
     }
-
     #plan div {
         grid-template-columns: 1fr 1fr;
     }
-
     #testimonials div {
         grid-template-columns: 1fr 1fr;
         grid-gap: 2em;
     }
-
     #about h3 {
         font-size: 2em;
     }
-
     #about div {
         grid-template-columns: repeat(4, 1fr);
     }
-
     #contact {
         padding: 2em 3em 0.5em;
     }
-
     fieldset {
         flex-direction: row;
         justify-content: space-between;
         padding: 1em 0;
     }
-
     #mySubmit {
         max-width: 200px;
         width: 100%;
         margin-left: auto;
     }
-
     footer {
         flex-direction: row;
         justify-content: space-evenly;
@@ -637,100 +527,79 @@ footer a {
         padding: 0.5em;
     }
 }
-
 @media (min-width: 1150px) {
     header {
         grid-template-rows: 80px 20px;
         grid-template-columns: 180px .5fr 1fr;
         align-items: end;
     }
-
     h1 {
         padding: 0.5em 0.75em 0 0;
     }
-
     header p {
         padding: 0;
     }
-
     nav {
         grid-row: 1/2;
         grid-column: 3/-1;
         align-self: baseline;
         padding: 0;
     }
-
     #menu-toggle li {
         margin-top: 0;
     }
-
     #menu-toggle li:last-child {
         margin-right: 0;
     }
-
     #menu-toggle a {
         padding: .5em 0;
     }
-
     #intro {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 60px 1fr;
     }
-
     #img-grid {
         grid-column: 2/-1;
         grid-row: 1/-1;
     }
-
     #plan h3 {
         padding: 2em 0 0 1em;
     }
-
     #plan div {
         grid-template-columns: repeat(4, 1fr);
         padding: 1em 3em 4em;
     }
-
     #plan section {
         max-height: 225px;
     }
-
     #plan img {
         max-height: 100%;
     }
-
     #testimonials {
         padding: 3em;
     }
-
     #testimonials div {
         grid-template-columns: repeat(4, 1fr);
     }
-
     #about {
         padding: 2em 1em 3em;
     }
-
     #about div {
         max-width: 60%;
         margin: 0 auto;
     }
-
     form {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1em;
     }
-
     footer {
         justify-content: end;
     }
-
     footer a {
         margin: 0 2em;
     }
-
     footer p {
         margin-right: auto;
     }
