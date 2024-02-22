@@ -456,6 +456,35 @@ footer a{
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
+    #testimonials div{
+        grid-template-columns: 1fr 1fr;
+    }
+    #about div{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    fieldset{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @media screen and(min-width: 980px){
+        #intro{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        #intro h2{
+            align-self: end;
+        }
+        #intro p{
+            grid-column: 1 / 1;
+        }
+        
+    }
+        
+    
 }
 
-}
+
