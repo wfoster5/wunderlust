@@ -305,5 +305,35 @@ q{
     place-content: center;
     cursor: pointer;   
 }
+.radio-input::before{
+    content: "";
+    width: 0.75em;
+    height: 0.75em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 125ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--purple);
+}
+.radio-label{
+    margin: 0;
+    margin-left: 2rem;
+}
+form{
+    display: grid;
+
+}
+select{
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    grid-area: select;
+}
 
 }
