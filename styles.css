@@ -230,6 +230,80 @@ q{
     height: 100%;
     margin: 0 auto;
 }
-
+#testimonials div{
+    display: grid;
+    gap: 0.5rem;
+}
+#testimonials section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about section{
+    max-width: 350px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+#about div{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+}
+#about img{
+    display: block;
+    width: 75%;
+    height: 50%;
+    max-width: 150px;
+    margin: 0 auto;
+}
+#about p{
+    font-size: 1.3rem;
+    text-align: center;
+}
+.form-required{
+    font-family: var(--fonts);
+    font-style: italic;
+    font-size: 1rem;
+}
+.required{
+    color: var(--purple);
+}
+#contact label, #contact legend{
+    display: inline-block;
+    padding: 3px;
+    text-transform: uppercase;
+}
+#contact input{
+    display: inline-block;
+    width: 100%;
+    border: 2px solid var(--purple);
+    padding: 1rem 0.5rem;
+    font-family: inherit;
+    font-weight: bold;
+}
+#contact fieldset label{
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 1rem;
+    text-transform: none;
+}
+.radio-input{
+    appearance: none;
+    background-color: var(--white);
+    margin: 0;
+    color: var(--purple);
+    border-radius: 0.15rem solid var(--purple);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    cursor: pointer;   
+}
 
 }
