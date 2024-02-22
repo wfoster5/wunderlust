@@ -64,10 +64,10 @@ table {
     box-sizing: border-box;
 }
 h1, h2, h3 {
-    font-family: var(--h1-h2-h3-font);
+    font-family:'molle';
 }
 h4, p, q, small, nav, button, form {
-    font-family: var(--h4-body-font);
+    font-family: 'montserrat';
 }
 h1 {
     font-size: 40px;
@@ -312,7 +312,7 @@ nav {
     padding: 0 0 0 0.75em;
 }
 #contact h3 span {
-    font-family: var(--h4-body-font);
+    font-family: 'montserrat';
     font-size: .5em;
     font-style: italic;
 }
@@ -337,7 +337,7 @@ form div {
 form input {
     padding: 1em;
     border: 3px solid var(--purple);
-    font-family: var(--h4-body-font);
+    font-family:'montserrat';
 }
 #nums {
     padding: 1em 0;
@@ -382,7 +382,7 @@ fieldset label {
 select {
     padding: 1em;
     border: 3px solid var(--purple);
-    font-family: var(--h4-body-font);
+    font-family:'montserrat';
 }
 select::before {
     display: block;
@@ -412,7 +412,7 @@ footer p {
 footer a {
     text-decoration: none;
     color: var(--black);
-    font-family: var(--h4-body-font);
+    font-family:'montserrat';
     font-size: .8em;
     padding: 1em 0 0;
 }
