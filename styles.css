@@ -105,6 +105,10 @@ header p{
 #logo{
     padding: 0;
 }
+#logo img{
+    max-width: 130px;
+    width: 100%;
+}
 .sr-only{
     position: absolute;
     left: -10000px;
